@@ -102,7 +102,7 @@ createAccordian(document.querySelector('app-accordion[id="autoDeskAutocad"]'), [
   // Get the current page URL or use any other criteria to determine the current page
   var currentPage = window.location.pathname;
   var pathSprit = currentPage.split("/")
-  var lastElement = pathSprit.slice(-1)[0]
+  var lastElement = pathSprit.slice(-2, -1)[0]
 
   // Select navigation items
   var navigationItems = document.querySelectorAll('#navbarSupportedContent a');
@@ -114,7 +114,9 @@ createAccordian(document.querySelector('app-accordion[id="autoDeskAutocad"]'), [
 
   // Add "active" class to the navigation item corresponding to the current page
   for (var i = 0; i < navigationItems.length; i++) {
-    if (navigationItems[i].getAttribute('href') === lastElement) {
+    let spritHref = navigationItems[i].getAttribute('href').split("/");
+    let lastHref = spritHref.slice(-2, -1)[0];
+    if (lastHref === lastElement) {
       navigationItems[i].classList.add('active');
       break; // Stop iterating once the current page is found
     }
