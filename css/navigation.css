@@ -22,7 +22,7 @@
 @media (max-width:991px){
     .mainlogo img{height: 30px;}
     .navpad .navbar-nav .nav-link {color: var(--white) !important;}
-    .navipad {position: absolute;top: 70px;left: 0;width: 100%;background:var(--blue);height: 100vh;margin: 0 !important;z-index: 111; overflow: hidden; scroll-behavior: auto;}
+    .navipad {position: absolute;top: 70px;left: 0;width: 100%;background:var(--blue);height:100%;margin: 0 !important;z-index: 111; overflow: hidden; scroll-behavior: auto;}
     .navbar-toggler:focus{box-shadow:none !important;}
     .navgap{gap: 0px;padding: 0 20px;}
     .navipad{padding: 0;}

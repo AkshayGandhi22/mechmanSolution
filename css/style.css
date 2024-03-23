@@ -12,7 +12,6 @@
     --pad60:60px;
     --pad50:50px;
     --pad30:30px;
-    --aspect-ratio: 4/3;
 }
 
 body{font-family: 'Montserrat', sans-serif; font-size: var(--font18);}
@@ -32,6 +31,7 @@ p + p {margin-top: var(--pad30);}
 .margin-t30{ margin-top: var(--pad30);}
 .padt30{ padding-top: var(--pad30);}
 .youtubeVideo{ position: sticky; top: var(--pad30);}
+.youtubeVideo iframe{width: 100%; aspect-ratio: 16 / 9;}
 .homeBannerSection{background:url(../images/bannerBG.jpg)no-repeat; height: 670px; background-size: cover; display: flex; align-items: center;}
 .homeBannerSection p{ font-size:var(--font30); color: var(--white); margin-bottom:var(--pad50); font-weight:700;}
 
@@ -63,7 +63,7 @@ p + p {margin-top: var(--pad30);}
 .footerSection :where(h4, p, a, li){ color: var(--white); }
 .footerSection :where( p, a, li), .copyright{  font-size: 16px;}
 .quickLinks ul{list-style: none; padding: 0; margin: 0; column-count: 2;}
-.footerSection a{text-decoration: none;}
+.footerSection a{text-decoration: none; word-break: break-word; display: block;}
 .footerSection a:hover{color: var(--white); text-decoration: underline;} 
 .footerFollowUs { display: flex; gap: 20px;}
 /* footerSection */
@@ -76,12 +76,12 @@ p + p {margin-top: var(--pad30);}
 
 .autocardIsRight{ background: url(../images/autoCAD-Hero.jpg)no-repeat; background-size: cover;} 
 .autocardIsRight h2, .trainingClasses h2, .customerSuccess h2{ margin-bottom: var(--pad50);}
-.autocadLT img{ height: 50px;}
+.autocadLT img{ height: 50px; object-fit: contain;}
 .accordion{ display: block;}
 .accordion-item{background: transparent;border: none;}
 .accordion-item + .accordion-item{margin-top: 15px;}
 .accordion-button:not(.collapsed){ background-color: var(--white)!important; font-weight: 700;}
-.accordion-button{color: var(--black) !important;font-size: var(--font-20); line-height: 1.25;padding: 12px 20px;background: var(--bs-white) !important;box-shadow: none;border: 2px solid var(--blue) !important;border-radius: 10px !important;box-shadow: none !important; }
+.accordion-button{color: var(--black) !important;font-size: var(--font20); line-height: 1.25;padding: 12px 20px;background: var(--bs-white) !important;box-shadow: none;border: 2px solid var(--blue) !important;border-radius: 10px !important;box-shadow: none !important; }
 .accordion-body{padding: 16px 30px 16px 16px;border: 2px solid var(--blue); background-color: var(--white); border-radius: 10px;margin-top: 15px;}
 .accordion-body p, .accordion-body ul li{font-size: 18px;line-height: 1.25;}
 .accordion-body p a{text-decoration: underline;}
@@ -112,12 +112,27 @@ p + p {margin-top: var(--pad30);}
 .powerMill{ background: url(../images/powerMillBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .featureCAM{ background: url(../images/FeatureCAMBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .powerShape p, .powerMill p, .featureCAM p { color: var(--black);}
+
 @media (max-width: 991px) {
-    .tab-content>.tab-pane {
-      display: block;
-      opacity: 1;
-    }
+    .tab-content>.tab-pane { display: block; opacity: 1;}
+    .aboutusSection .youtubeVideo, .autocadLT{ padding-top:var(--pad30);}
+    .autoCADFeatures .youtubeVideo{ padding-bottom: var(--pad30);}
+    .tab-content h2{ margin: 0;}
+    .tab-pane{ margin-bottom: var(--pad30);}
+    .footerSection h4{ margin-top: var(--pad30);}
+    .footerSection .quickLinks h4{ margin-top: 0;}
 }
 
-@media(max-width: 575px){
+@media(max-width: 767px){
+  :root{
+    --font60:40px;
+    --font45:30px;
+    --font30:25px;
+    --font20:18px;
+    --font18:16px;
+    --pad100:50px;
+    --pad60:30px;
+    --pad50:25px;
+    --pad30:20px;
+}
 }
