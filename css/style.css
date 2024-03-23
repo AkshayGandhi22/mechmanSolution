@@ -1,0 +1,123 @@
+:root{
+    --blue: #03459B;
+    --white: #ffffff;
+    --black: #231E1E;
+    --gray:#EEEEEE;
+    --font60:60px;
+    --font45:45px;
+    --font30:30px;
+    --font20:20px;
+    --font18:18px;
+    --pad100:100px;
+    --pad60:60px;
+    --pad50:50px;
+    --pad30:30px;
+    --aspect-ratio: 4/3;
+}
+
+body{font-family: 'Montserrat', sans-serif; font-size: var(--font18);}
+h1, h2, h3, h4, h5, h6, p{ margin: 0;}
+img{ max-width: 100%;}
+.container-fluid{ max-width: 1400px;}
+h1{font-size: var(--font60); color: var(--white); margin-bottom:20px;}
+h2{font-size: var(--font45); color: var(--blue); margin-bottom:10px; font-weight: 700; line-height: 1;}
+h3{font-size: var(--font30); color: var(--blue); margin-bottom:var(--pad30); font-weight: 700; line-height: 1;}
+h4{font-size: var(--font20); color: var(--blue); margin-bottom:15px; font-weight: 700; line-height: 1;}
+.button{border:2px solid var(--blue); padding: 10px 30px; background-color: var(--blue); color: var(--white); text-decoration: none; display: inline-block; transition: all 0.5s linear;}
+.button:hover{border:2px solid var(--blue); background-color: var(--white); color: var(--black);}
+.titleText{ padding-bottom: var(--pad30);}
+.pad100{  padding: var(--pad100) 0;}
+.padT100{ padding-top: var(--pad100);}
+p + p {margin-top: var(--pad30);}
+.margin-t30{ margin-top: var(--pad30);}
+.padt30{ padding-top: var(--pad30);}
+.youtubeVideo{ position: sticky; top: var(--pad30);}
+.homeBannerSection{background:url(../images/bannerBG.jpg)no-repeat; height: 670px; background-size: cover; display: flex; align-items: center;}
+.homeBannerSection p{ font-size:var(--font30); color: var(--white); margin-bottom:var(--pad50); font-weight:700;}
+
+/* aboutus */
+.aboutusSection{ background: url(../images/aboutBG.jpg)no-repeat;background-size: cover; }
+.aboutusText p{ margin: var(--pad30) 0;}
+/* aboutus */
+
+/* whyChooseSection */
+.whyChooseSection{ background-color: var(--blue); text-align: center;}
+.whatweDoFlex { display: flex;}
+.whatWeDo{padding: var(--pad60) var(--pad30); flex: 1;}
+.whatWeDo.blue a img { filter: brightness(0) invert(1);}
+.whatWeDo.gray{background-color: var(--gray);}
+.whatWeDo.blue :where(h3, p){ color: var(--white);}
+.whatWeDo.gray { color: var(--black);}
+.whatweDoFlex{ display: flex;}
+.whatWeDo p { margin-bottom: 30px; min-height: 135px;}
+/* whyChooseSection */
+
+/* ourServices */
+.ourServicesBox { display: flex; }
+.ourServicesBox > img, .ourServicesText{ width: 50%; flex: 0 0 auto;}
+.ourServicesText{ background-color: var(--gray); padding:25px;display: flex;flex-direction: column;justify-content: space-between;}
+/* ourServices */
+
+/* footerSection */
+.footerSection{ background-color: var(--blue); padding: var(--pad60) 0;}
+.footerSection :where(h4, p, a, li){ color: var(--white); }
+.footerSection :where( p, a, li), .copyright{  font-size: 16px;}
+.quickLinks ul{list-style: none; padding: 0; margin: 0; column-count: 2;}
+.footerSection a{text-decoration: none;}
+.footerSection a:hover{color: var(--white); text-decoration: underline;} 
+.footerFollowUs { display: flex; gap: 20px;}
+/* footerSection */
+.copyright{ background-color: var(--blue); padding: var(--font20) 0; margin-top: 1px; color: var(--white);} 
+
+.innerBanner{ height: 500px;}
+.autocadBanner{background: url(../images/autoCAD-Banner.jpg)no-repeat; background-size: cover;}
+.autocadBanner img{ width: 400px; padding-bottom: var(--pad30);}
+.autodeskYoutube {text-align: right;}
+
+.autocardIsRight{ background: url(../images/autoCAD-Hero.jpg)no-repeat; background-size: cover;} 
+.autocardIsRight h2, .trainingClasses h2, .customerSuccess h2{ margin-bottom: var(--pad50);}
+.autocadLT img{ height: 50px;}
+.accordion{ display: block;}
+.accordion-item{background: transparent;border: none;}
+.accordion-item + .accordion-item{margin-top: 15px;}
+.accordion-button:not(.collapsed){ background-color: var(--white)!important; font-weight: 700;}
+.accordion-button{color: var(--black) !important;font-size: var(--font-20); line-height: 1.25;padding: 12px 20px;background: var(--bs-white) !important;box-shadow: none;border: 2px solid var(--blue) !important;border-radius: 10px !important;box-shadow: none !important; }
+.accordion-body{padding: 16px 30px 16px 16px;border: 2px solid var(--blue); background-color: var(--white); border-radius: 10px;margin-top: 15px;}
+.accordion-body p, .accordion-body ul li{font-size: 18px;line-height: 1.25;}
+.accordion-body p a{text-decoration: underline;}
+.accordion-body p a:hover{color: var(--pink);}
+.accordion-body ul{padding: 0 0 0 20px;margin: 0;}
+.accordion-body li + li{margin-top: 10px;}
+.accordion-body ul.li_bold li{font-weight: 700;}
+.accordion-button::after{ background: url(../images/plus.svg)no-repeat;}
+.accordion-button:not(.collapsed)::after{ background: url(../images/minus.svg)no-repeat;}
+
+.nav-tabs{ flex-direction: column; border: none;}
+.nav-tabs .nav-link{ background-color: var(--gray); border: none; width: 100%; color: var(--blue); margin-bottom: 10px; border-radius: 0;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { background-color: var(--blue); color: var(--white);}
+.tab-content .accordion-body, .tab-content .accordion-item + .accordion-item{ margin-top: 0;}
+.accordion-body .tabul{margin: var(--pad30) 0;}
+.fusion360Banner{background: url(../images/fusion360Banner.jpg)no-repeat; background-size: cover; background-position: center; background-color: #ffffff72;}
+.workflowText{ background-color: var(--gray); padding:15px; min-height: 260px;}
+.entireWorkflow .row, .rowgap{ gap: var(--pad30) 0;}
+
+.productInformation{ background-color: var(--black); padding: var(--pad50) 0; }
+.productInformationText { position: relative;}
+.productInformationText img { height: 300px; object-fit: cover; }
+.productInformationText a { position: absolute; padding: var(--pad30); background-color: #00000080; font-size: var(--font20); color: var(--white); text-decoration: none; top: 0; left: 0; width: 100%; height: 100%;}
+.productInformation h2{ color: var(--white);}
+.customerSuccess{ background-color: var(--gray);}
+
+.powerShape{ background: url(../images/PowerShape.jpg)no-repeat; background-size: cover; background-position: center;}
+.powerMill{ background: url(../images/powerMillBanner.jpg)no-repeat; background-size: cover; background-position: center;}
+.featureCAM{ background: url(../images/FeatureCAMBanner.jpg)no-repeat; background-size: cover; background-position: center;}
+.powerShape p, .powerMill p, .featureCAM p { color: var(--black);}
+@media (max-width: 991px) {
+    .tab-content>.tab-pane {
+      display: block;
+      opacity: 1;
+    }
+}
+
+@media(max-width: 575px){
+}
