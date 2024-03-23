@@ -1,0 +1,8 @@
+generear design -  fusion 
+dai mold design - poweshape
+2d design - aucade
+jobwork - fuction extension
+dai- mold programing - power mill
+turning/turn-mill   -  feturecam
+swiss programming   - partmaker
+e and 5 axix   -  powermill
