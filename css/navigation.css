@@ -1,11 +1,11 @@
-.navigation{padding:10px 0;}
+.navigation{padding:10px 0;position: sticky; top: 0; z-index: 1; background: #fff;}
 .navigation .row{align-items: center;}
 .navgap{gap:50px;}
 .navgap li{position: relative;}
 .navgap li a{padding: 0 !important;}
 .navpad .navbar-nav .nav-link{color: var(--black);font-size: 18px;font-weight: 400;line-height: 26px;}
-.navpad .navbar-nav .nav-item::before{content: "";transition: 0.5s;position: absolute;width: 0px;background-color: var(--site-col5);height: 1px;bottom: 0;left: 0px;z-index: -1;}
-.navpad .navbar-nav .nav-link:focus, .navpad .navbar-nav .nav-link:hover{color: var(--site-col5);}
+.navpad .navbar-nav .nav-link:focus, .navpad .navbar-nav .nav-link:hover, .navpad .navbar-nav .nav-link.active{color: var(--blue); position: relative;}
+.navpad .navbar-nav .nav-link.active::before{content: ''; width: 100%; height: 2px; background-color: var(--blue); position: absolute; bottom: 0; left: 0; }
 .navpad .navbar-nav .active .nav-link{color: var(--site-col5);font-family: 'century_gothicbold';}
 .navpad .navbar-nav .nav-item.active::before{width: 100%;}
 .navpad .navbar-nav .nav-item:hover::before{width:100%;}
@@ -21,8 +21,9 @@
 
 @media (max-width:991px){
     .mainlogo img{height: 30px;}
-    .navpad .navbar-nav .nav-link {color: var(--white) !important;}
-    .navipad {position: absolute;top: 70px;left: 0;width: 100%;background:var(--blue);height:100%;margin: 0 !important;z-index: 111; overflow: hidden; scroll-behavior: auto;}
+    .navpad .navbar-nav .nav-link {color: var(--white) !important; width: fit-content; margin: 0 auto;}
+    .navpad .navbar-nav .nav-link.active::before{ background-color: var(--white);}
+    .navipad {position: absolute;top: 70px;left: 0;width:100%;background:var(--blue);height:100vh;margin: 0 !important;z-index: 111; overflow: hidden; scroll-behavior: auto;}
     .navbar-toggler:focus{box-shadow:none !important;}
     .navgap{gap: 0px;padding: 0 20px;}
     .navipad{padding: 0;}

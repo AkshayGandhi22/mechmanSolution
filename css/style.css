@@ -113,7 +113,15 @@ p + p {margin-top: var(--pad30);}
 .featureCAM{ background: url(../images/FeatureCAMBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .powerShape p, .powerMill p, .featureCAM p { color: var(--black);}
 
+.aboutusbanner{ position: relative;}
+.aboutusbanner #myVideo{ height: 500px; width:100%; object-fit: cover; }
+.aboutusbanner :where(h2,p){ color: var(--white);}
+.poabs{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; margin: auto;display: flex;align-items: center;}
+.aboutuspage{ background-color: var(--black);}
+
 @media (max-width: 991px) {
+    .whatweDoFlex{flex-direction: column;}
+    .whatWeDo p{ min-height: auto;}
     .tab-content>.tab-pane { display: block; opacity: 1;}
     .aboutusSection .youtubeVideo, .autocadLT{ padding-top:var(--pad30);}
     .autoCADFeatures .youtubeVideo{ padding-bottom: var(--pad30);}
