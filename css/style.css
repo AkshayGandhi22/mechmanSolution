@@ -111,16 +111,25 @@ p + p {margin-top: var(--pad30);}
 .powerShape{ background: url(../images/PowerShape.jpg)no-repeat; background-size: cover; background-position: center;}
 .powerMill{ background: url(../images/powerMillBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .featureCAM{ background: url(../images/FeatureCAMBanner.jpg)no-repeat; background-size: cover; background-position: center;}
-.carrerBanner{ background-color: #00000080; background: url(../images/career.jpg)no-repeat; background-size: cover; background-position: center;}
-.postProcessorsBanner{ background-color: #00000080; background: url(../images/postProcessorsBanner.jpg)no-repeat; background-size: cover; background-position: center;}
-.carrerBanner h2, .postProcessorsBanner h2{ color: var(--white); margin-bottom: var(--pad30);}
+.carrerBanner{ background: url(../images/career.jpg)no-repeat; background-size: cover; background-position: center;}
+.postProcessorsBanner{background: url(../images/postProcessorsBanner.jpg)no-repeat; background-size: cover; background-position: center;}
+.training{background: url(../images/trainingbg.jpg)no-repeat; background-size: cover; background-position: center;}
+.carrerBanner h2, .postProcessorsBanner h2, .training h2{ color: var(--white); margin-bottom: var(--pad30);}
 .powerShape p, .powerMill p, .featureCAM p { color: var(--black);}
+.training img{ height: 50px;}
 
 .aboutusbanner{ position: relative;}
 .aboutusbanner #myVideo{ height: 500px; width:100%; object-fit: cover; }
 .aboutusbanner :where(h2,p){ color: var(--white);}
 .poabs{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; margin: auto;display: flex;align-items: center;}
 .aboutuspage{ background-color: var(--black);}
+
+.formMain h2{margin-bottom: var(--pad30); }
+.padb30{ padding-bottom: var(--pad30);}
+.checkboxLayout{ list-style: none; padding: 0;margin: 0; display: flex; flex-wrap: wrap; gap: 10px;}
+.checkboxLayout li{flex: 0 0 30%; }
+.checkboxLayout li label{ margin-left: 5px;}
+.form-label, .formtitle p{ font-size: var(--font18); font-weight: 700; margin-bottom: 10px; color: var(--blue);}
 
 @media (max-width: 991px) {
     .whatweDoFlex{flex-direction: column;}
@@ -146,4 +155,8 @@ p + p {margin-top: var(--pad30);}
     --pad50:25px;
     --pad30:20px;
 }
+}
+
+@media(max-width: 500px){
+    .checkboxLayout li{flex: 0 0 45%; }
 }

@@ -1,4 +1,4 @@
-function createAccordian(accordianElement, accrodianBoxes) {
+function createAccordian(accordianElement, accrodianBoxes, option) {
     let accodianItem, accordianMainBox, accordianMainDiv, accordianHeadDiv, accordianHeadAnchor, accordianTextDiv, accordianTextBody, i;
 
     if (accordianElement === null || typeof accordianElement === 'undefined') {
@@ -7,7 +7,7 @@ function createAccordian(accordianElement, accrodianBoxes) {
 
     accordianMainBox = document.createElement('div');
     accordianMainBox.className = 'accordion';
-    accordianMainBox.id = 'accordionExample';
+    accordianMainBox.id = option.accordianMainBoxCSS;
     accordianElement.appendChild(accordianMainBox);
 
     accodianItem = accrodianBoxes.length;
