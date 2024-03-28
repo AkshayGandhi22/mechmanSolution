@@ -86,7 +86,7 @@ p + p {margin-top: var(--pad30);}
 .accordion-body p, .accordion-body ul li{font-size: 18px;line-height: 1.25;}
 .accordion-body p a{text-decoration: underline;}
 .accordion-body p a:hover{color: var(--pink);}
-.accordion-body ul{padding: 0 0 0 20px;margin: 0;}
+.accordion-body ul{padding: 0 0 0 0px;margin: 0;}
 .accordion-body li + li{margin-top: 10px;}
 .accordion-body ul.li_bold li{font-weight: 700;}
 .accordion-button::after{ background: url(../images/plus.svg)no-repeat;}
@@ -97,6 +97,7 @@ p + p {margin-top: var(--pad30);}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { background-color: var(--blue); color: var(--white);}
 .tab-content .accordion-body, .tab-content .accordion-item + .accordion-item{ margin-top: 0;}
 .accordion-body .tabul{margin: var(--pad30) 0;}
+.accordion-body .tabul{padding: 0 0 0 20px;}
 .fusion360Banner{background: url(../images/fusion360Banner.jpg)no-repeat; background-size: cover; background-position: center; background-color: #ffffff72;}
 .workflowText{ background-color: var(--gray); padding:15px; min-height: 260px;}
 .entireWorkflow .row, .rowgap{ gap: var(--pad30) 0;}
@@ -112,9 +113,10 @@ p + p {margin-top: var(--pad30);}
 .powerMill{ background: url(../images/powerMillBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .featureCAM{ background: url(../images/FeatureCAMBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .carrerBanner{ background: url(../images/career.jpg)no-repeat; background-size: cover; background-position: center;}
+.contactusBanner{ background: url(../images/contactBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .postProcessorsBanner{background: url(../images/postProcessorsBanner.jpg)no-repeat; background-size: cover; background-position: center;}
 .training{background: url(../images/trainingbg.jpg)no-repeat; background-size: cover; background-position: center;}
-.carrerBanner h2, .postProcessorsBanner h2, .training h2{ color: var(--white); margin-bottom: var(--pad30);}
+.carrerBanner h2, .postProcessorsBanner h2, .training h2, .contactusBanner :where(h2,p){ color: var(--white); margin-bottom: var(--pad30);}
 .powerShape p, .powerMill p, .featureCAM p { color: var(--black);}
 .training img{ height: 50px;}
 
@@ -130,6 +132,14 @@ p + p {margin-top: var(--pad30);}
 .checkboxLayout li{flex: 0 0 30%; }
 .checkboxLayout li label{ margin-left: 5px;}
 .form-label, .formtitle p{ font-size: var(--font18); font-weight: 700; margin-bottom: 10px; color: var(--blue);}
+
+.customeTraining img{height: 50px; margin-bottom: var(--pad30);}
+
+.contactBG{ background-color: var(--gray); padding-left:var(--pad30); padding-right: var(--pad30);}
+.contactInfo{ padding: var(--pad30) 0;}
+.contactInfo p{font-size: 14px; font-weight: 700; color: var(--blue); }
+.contactInfo p + a + p{ margin-top: 15px;}
+.contactInfo a{ font-size: var(--font18); color: var(--black); word-wrap: break-word;}
 
 @media (max-width: 991px) {
     .whatweDoFlex{flex-direction: column;}
