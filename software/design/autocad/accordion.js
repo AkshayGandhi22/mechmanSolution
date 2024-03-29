@@ -30,7 +30,10 @@ createAccordian(document.querySelector('app-accordion[id="autoDeskAutocadLT"]'),
         <p><b>Sysvar monitor</b><br>Monitor current system variables against a preferred list of values. Notification balloons alert you of deviations.</p>
         <p><b>Autodesk desktop app</b><br>Get alerts and install software updates without disrupting your workflow. View tutorials about new features.</p>`
     }
-]);
+],
+    option = {
+        accordianMainBoxCSS: "accordionExample1"
+    });
 
 createAccordian(document.querySelector('app-accordion[id="autoDeskAutocad"]'), [
     {
@@ -96,4 +99,7 @@ createAccordian(document.querySelector('app-accordion[id="autoDeskAutocad"]'), [
         <p><b>Autodesk App Store</b><br>Customize your software with Autodesk-approved extensions.</p>
         `
     }
-]);
+],
+    option = {
+        accordianMainBoxCSS: "accordionExample2"
+    });

@@ -53,9 +53,10 @@ p + p {margin-top: var(--pad30);}
 /* whyChooseSection */
 
 /* ourServices */
-.ourServicesBox { display: flex; }
-.ourServicesBox > img, .ourServicesText{ width: 50%; flex: 0 0 auto;}
+.ourServicesBox { display: flex; height: 100%;}
+.ourServicesBox > img, .ourServicesText{ width: 50%; flex: 0 0 auto; object-fit: cover;}
 .ourServicesText{ background-color: var(--gray); padding:25px;display: flex;flex-direction: column;justify-content: space-between;}
+.servicebtn{ margin-top: 10px;}
 /* ourServices */
 
 /* footerSection */
@@ -151,6 +152,7 @@ p + p {margin-top: var(--pad30);}
     .tab-pane{ margin-bottom: var(--pad30);}
     .footerSection h4{ margin-top: var(--pad30);}
     .footerSection .quickLinks h4{ margin-top: 0;}
+    .ourServicesSection .row {gap: var(--pad30) 0; }
 }
 
 @media(max-width: 767px){
@@ -169,4 +171,6 @@ p + p {margin-top: var(--pad30);}
 
 @media(max-width: 500px){
     .checkboxLayout li{flex: 0 0 45%; }
+    .ourServicesBox{flex-direction: column;}
+    .ourServicesBox > img, .ourServicesText{width: 100%;}
 }
