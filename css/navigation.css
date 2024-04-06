@@ -9,6 +9,7 @@
 .navpad .navbar-nav .active .nav-link{color: var(--site-col5);font-family: 'century_gothicbold';}
 .navpad .navbar-nav .nav-item.active::before{width: 100%;}
 .navpad .navbar-nav .nav-item:hover::before{width:100%;}
+.mainlogo img{ height: 60px;}
 
 .dropdown-menu.show { display: flex; flex-direction: row; transform: translate(0px, 52px) !important;}
 .dropdown-menu.show li { width: 100%; flex: 1; min-width: 180px;}
@@ -20,7 +21,7 @@
 .dropdown-menu.show.dropdownList{ flex-direction: column;}
 
 @media (max-width:991px){
-    .mainlogo img{height: 30px;}
+    .mainlogo img{height: 50px;}
     .navpad .navbar-nav .nav-link {color: var(--white) !important; width: fit-content; margin: 0 auto;}
     .navpad .navbar-nav .nav-link.active::before{ background-color: var(--white);}
     .navipad {position: absolute;top: 70px;left: 0;width:100%;background:var(--blue);height:100vh;margin: 0 !important;z-index: 111; overflow: hidden; scroll-behavior: auto;}
