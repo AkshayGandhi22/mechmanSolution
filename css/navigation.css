@@ -1,9 +1,9 @@
 .navigation{padding:10px 0;position: sticky; top: 0; z-index: 1; background: #fff;}
 .navigation .row{align-items: center;}
-.navgap{gap:50px;}
+.navgap{gap:30px;}
 .navgap li{position: relative;}
 .navgap li a{padding: 0 !important;}
-.navpad .navbar-nav .nav-link{color: var(--black);font-size: 18px;font-weight: 400;line-height: 26px;}
+.navpad .navbar-nav .nav-link{color: var(--black);font-size: 16px;font-weight: 400;line-height: 26px;}
 .navpad .navbar-nav .nav-link:focus, .navpad .navbar-nav .nav-link:hover, .navpad .navbar-nav .nav-link.active{color: var(--blue); position: relative;}
 .navpad .navbar-nav .nav-link.active::before{content: ''; width: 100%; height: 2px; background-color: var(--blue); position: absolute; bottom: 0; left: 0; }
 .navpad .navbar-nav .active .nav-link{color: var(--site-col5);font-family: 'century_gothicbold';}
@@ -14,7 +14,7 @@
 .dropdown-menu.show { display: flex; flex-direction: row; transform: translate(0px, 52px) !important;}
 .dropdown-menu.show li { width: 100%; flex: 1; min-width: 180px;}
 .dropdown-menu ul{ list-style: none; padding: 0; margin: 0;}
-.dropdownTitle {font-size: 18px;font-weight: 700; padding: 0 8px; margin-bottom: 10px;}
+.dropdownTitle {font-size: 16px;font-weight: 700; padding: 0 8px; margin-bottom: 10px;}
 .dropdownListItem li:not(:first-child) a, .dropdownList li a { padding: 8px !important; width: 100%; text-decoration: none; font-size: 16px; color: #000; display: inline-block; line-height: 1;}
 .dropdownListItem li:not(:first-child):hover a, .dropdownList li:hover a{ background-color:#f1f1f1;}
 .dropdownListItem li a.active{background-color:#f1f1f1;}
