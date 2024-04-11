@@ -142,6 +142,9 @@ p + p {margin-top: var(--pad30);}
 .contactInfo p + a + p{ margin-top: 15px;}
 .contactInfo a{ font-size: var(--font18); color: var(--black); word-wrap: break-word;}
 
+.customerLogo { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;}
+.customerLogo img { width: 150px; object-fit: contain; flex-basis: 150px; background: #f6f6f6; padding: 10px; border-radius: 10px; flex-grow: revert ; min-height: 150px; max-height: 150px;}
+
 @media (max-width: 991px) {
     .whatweDoFlex{flex-direction: column;}
     .whatWeDo p{ min-height: auto;}
@@ -167,6 +170,7 @@ p + p {margin-top: var(--pad30);}
     --pad50:25px;
     --pad30:20px;
 }
+.customerLogo img{width: 100px;min-height: 100px; max-height: 100px; flex-basis: 100px; }
 }
 
 @media(max-width: 500px){
